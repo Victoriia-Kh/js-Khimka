@@ -1,4 +1,4 @@
-﻿<!-- 
+/*
     1. Среди трех чисел найти среднее арифметическое. Если среди чисел есть равные, 
     вывести сообщение "Ошибка". Числа принять от пользователя.
 
@@ -9,16 +9,24 @@
     4. Дано два числа A и B где (A < B). 
     Выведите на экран суму всех чисел расположенных в числовом промежутке от А до В. 
     Выведите на экран все нечетные значения, расположенные в числовом промежутке от А до В.   
--->
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title>Homework #2</title>
-    <script src="js/task-2.1.js"></script>
-    <script src="js/task-2.2.js"></script>
-    <script src="js/task-2.3.js"></script>
-    <script src="js/task-2.4.js"></script>
-</head>
-<body>
-</body>
-</html>
+*/
+
+[a,b] = prompt('Введіть 2 цілих числа через пробіл.','Вводити тут').split(' ');
+if (a > b) {
+    alert('Помилка, перше число більше за друге.');
+} else{
+    let suma = 0;
+    for (var i = Number(a)+1; i < b; i++ ) {
+        console.log(suma)
+        console.log(i)
+
+        suma = suma + Number(i);
+    }
+    alert("Сума чисел від "+ a + " до " + b + " = " + suma)
+
+    for (var r = Number(a)+1; r < b; r++ ) {
+        if (r % 2 == 1) {
+            document.write(r + "  ");
+        }
+    }
+}
