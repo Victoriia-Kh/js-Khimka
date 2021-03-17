@@ -45,7 +45,8 @@
     
     Подсказка: передача пустого ввода в приглашение prompt возвращает пустую строку ''. Нажатие клавиши Esc во время запроса возвращаетnull.
 
-8. Напишите условие if для проверки, что переменная age находится в диапазоне между 14 и 90 включительно.
+8. Напишите условие if для проверки, что переменная age находится в диапазоне 
+    между 14 и 90 включительно.
     «Включительно» означает, что значение переменной age может быть равно 14 или 90. 
     Значение вводит пользователь
 
@@ -95,9 +96,10 @@
     }
 */
 
-var age = prompt("Введіть число");
-if (age <= 90 && age >= 14) {
-    console.log("Ok")
+if (browser == 'Edge'){
+    alert( "You've got the Edge!" );
+} else if (browser == 'Chrome' || browser == 'Firefox' || browser == 'Safari' || browser == 'Opera') {
+    alert('Okay we support these browsers too');
 } else {
-    console.log("Problem")
+    alert('We hope that this page looks ok!');
 }
