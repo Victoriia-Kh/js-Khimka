@@ -12,12 +12,12 @@
 */
 
 let [a,b,c] = prompt('Введіть 3 цілих числа через пробіл.','Вводити тут').split(' ');
-let max = a;
+let max = +a;
 
-if (max < b) {
-    max = b;
+if (max < +b) {
+    max = +b;
 }
-if (max < c) {
-    max = c
+if (max < +c) {
+    max = +c
 }
 alert('Максимальне число = ' + max)
