@@ -27,8 +27,8 @@ var Calculator = {
     }
 }
 
-var Calculator[num1] = +prompt('Введіть перше число', '123');
-var Calculator.num2 = +prompt('Введіть друге число', '123');
-var Calculator.sign = +prompt('Введіть знак операції', '+-*/');
+ Calculator.num1 = +prompt('Введіть перше число', '123');
+ Calculator.num2 = +prompt('Введіть друге число', '123');
+ Calculator.sign = +prompt('Введіть знак операції', '+-*/');
 
 Calculator.count()

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson 6 Practise</title>
+</head>
+<body>
+
+    <!-- 
+        1.	Часы
+			Напишите функцию, которая принимает на вход количство часов, минут и секунд, и преобразует полученное время в миллисекунды.
+
+			Пример:
+			past(0, 1, 1) == 61000
+		
+		###########
+		
+		2. Каждое число в квадрат
+
+			Напишите функцию, которая принимает число и возводит каждую цифру этого числа в квадрат.
+
+			Пример:
+			squareDigits(9119) //811181 так как 9^2 равно 81 и 1^2 равно 1.
+		
+		###########
+		
+		3.	Настойчивый баггер
+
+			Напишите функцию, которая принимает число и возвращает его мультипликативное постоянство, которое является числом раз, когда вы должны умножить цифры этого числа, пока не достигнете числа из одного символа.
+			Примеры:
+			 persistence(39) === 3 // так как 3*9 = 27, 2*7 = 14, 1*4=4 и число 4 состоит из 1 символа
+			 persistence(999) === 4 // так как  9*9*9 = 729, 7*2*9 = 126, 1*2*6 = 12, и наконец 1*2 = 2
+			 persistence(4) === 0 // так как 4 уже состоит из одного символа
+		
+		###########
+		
+		4.	Заменить все элементы
+
+			Напишите функцию replaceAll, которая принимает первым параметром массив элементов, вторым параметром - элемент, который нужно заменить и третьим - 
+			элемент, который должен заменить второй элемент.
+			Пример:
+			 replaceAll(array: [1,2,2], old: 1, new: 2) // [2,2,2]
+		
+		###########
+			 
+		5.	Напишите функцию, которая будет обрабатывать url, удаляя в нем всё после знака #
+
+			Примеры:
+
+			// returns 'www.codewars.com'
+			removeUrlAnchor('www.codewars.com#about')
+
+			// returns 'www.codewars.com?page=1' 
+			removeUrlAnchor('www.codewars.com?page=1')
+			
+		6.	У вас есть массив объектов user, и в каждом из них есть user.name. Напишите код, который преобразует их в массив имён..
+
+			let vasya = { name: "Вася", age: 25 };
+			let petya = { name: "Петя", age: 30 };
+			let masha = { name: "Маша", age: 28 };
+
+			let users = [ vasya, petya, masha ];
+
+			let names = /* ... ваш код */
+
+			alert( names ); // Вася, Петя, Маша
+
+		7.	У вас есть массив объектов user, и у каждого из объектов есть name, surname и id.
+			Напишите код, который создаст ещё один массив объектов с параметрами id и fullName, где fullName – состоит из name и surname.
+
+			let vasya = { name: "Вася", surname: "Пупкин", id: 1 };
+			let petya = { name: "Петя", surname: "Иванов", id: 2 };
+			let masha = { name: "Маша", surname: "Петрова", id: 3 };
+
+			let users = [ vasya, petya, masha ];
+
+			let usersMapped = /* ... ваш код ... */
+
+			/*
+			usersMapped = [
+			{ fullName: "Вася Пупкин", id: 1 },
+			{ fullName: "Петя Иванов", id: 2 },
+			{ fullName: "Маша Петрова", id: 3 }
+			]
+			*/
+		
+		8.	Напишите функцию getAverageAge(users), которая принимает массив объектов со свойством age и возвращает средний возраст.
+			Формула вычисления среднего арифметического значения: (age1 + age2 + ... + ageN) / N.
+
+			let vasya = { name: "Вася", age: 25 };
+			let petya = { name: "Петя", age: 30 };
+			let masha = { name: "Маша", age: 29 };
+
+			let arr = [ vasya, petya, masha ];
+
+			alert( getAverageAge(arr) ); // (25 + 30 + 29) / 3 = 28
+
+		9.	Напишите функцию, которая принимает строку и удаляет в ней все дублирующиеся слова, оставляя тем самым только уникальные
+
+			Пример:
+
+			Input:
+			'alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta'
+
+			Output:
+			'alpha beta gamma delta'
+
+     -->
+</body>
+</html>
