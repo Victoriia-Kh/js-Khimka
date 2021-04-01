@@ -36,7 +36,7 @@ function createModalBox() {
         console.log(inputName.value)
         console.log(inputMail.value.indexOf('@'))
         if (inputMail.value.indexOf('@') != -1){
-            alert(`Thank you, ${inputName.value}!`);
+            alert(`Ви зареєстровані!`);
         } else {
             alert('Ви ввели не правильний емейл!');
         }
