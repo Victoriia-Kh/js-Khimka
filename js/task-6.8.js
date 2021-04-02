@@ -121,21 +121,22 @@ var watchList = [
 ];
 
 
+var step1 = watchList.filter(elem => elem.Director == "Christopher Nolan")
 
+console.log(step1)
 
-var step = watchList.map( 
+var step2 = step1.map( 
     function ( elem ) {
-      if (elem.Director == "Christopher Nolan"){
-          return +elem.imdbRating
-      }
+        return +elem.imdbRating
     }
 );
 
-step.pop()
-console.log(step)
 
-var AverageRating = step.reduce(function (sum, item) {
+//step2.pop()
+console.log(step2)
+
+var AverageRating = step2.reduce(function (sum, item) {
     return sum + item;
-}, 0) / step.length;
+}, 0) / step2.length;
 
 console.log(AverageRating)
