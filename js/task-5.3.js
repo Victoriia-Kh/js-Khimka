@@ -70,3 +70,32 @@ addSalary()
 for (var i = 0; i < mainArr.length; i++){
     mainArr[i].show()
 }
+
+/* 
+    5. (*) Для задания 3 создать метод, позволяющий отсортировать массив сотрудников по одному из свойств: 
+        name, sName, age, occupation, salary.
+        Параметр для сортировки принимается от пользователя.
+        После выполнения функции — вывести информацию о сотрудниках.
+*/
+
+
+var param = prompt('введіть параметр для сорторування', 'name, sName, age, occupation, salary')
+
+function arrSort(arr, prop){
+    res = arr.sort(function(a, b) {
+        if (prop == 'salary' || prop == 'age'){
+            return a[prop] - b[prop]
+        } else {
+            if (a[prop] > b[prop]){
+              return 1
+            } else {
+              return -1
+            }
+        }
+        
+    })
+    return res
+}
+
+console.log(param)
+console.log(arrSort(mainArr, param))
