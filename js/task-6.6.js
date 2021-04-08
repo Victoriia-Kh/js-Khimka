@@ -115,13 +115,17 @@ var watchList = [
 }
 ];
 
-watchList.map( 
+var newArr = watchList.map( 
     function find( elem ) {
-      elem.rating =  elem.Title + ' ' + elem.Rated;
+      a = {
+          Title : elem.Title,
+          rating : elem.imdbRating
+    };
+      return  a;
     }
 );
 
-console.log(watchList)
+console.log(newArr)
 
 
 //7. Массив watchList содержит объекты с информацией о нескольких фильмах. 
@@ -130,13 +134,9 @@ console.log(watchList)
 
 var filteredList;
 
-//elem.filter(imdbRating => +imdbRating >= 8.0)
+filteredList = newArr.filter(elem => +elem.rating >= 8.0)
 
 
-step1 = watchList.map(function (elem) {
-        return 
-    }
-)
 
 
 console.log(filteredList);
